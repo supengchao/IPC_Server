@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jar="/Users/didi/Downloads/aidl_server/ipc_aidl/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_c0ba01374027f70355859cbf50415fd88c1a0fe4/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_850770e59bc65d7776d66391444dbb1ced78a4b2/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_97ace2758496e94710f205df7bb802b67744be9d/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_ab07e0378d018c87f561722acc4cfaaef1f0cc01/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="831815a46ae2de6d613703e5169892929ddbe884">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b8ef4aa5701b4504ab5b0d39014794a49c065731/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_32da234be9e5164b704e9d8141b507a799cfe24b/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="9c1ac52f6abf3a42d08b20522399e62a7c0cd2a4">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6e27ba04c2b2210b150a46c5ce5b640638a66c33/classes.dex" />
-    </item>
-    <item
-        jar="/Users/didi/Downloads/aidl_server/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/didi/Downloads/aidl_server/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_61f549f03336bfcc744e3f75c4986fc66e983f00/classes.dex" />
+        sha1="e48cea16bf5f202debefc00de65a2dc97efccd6a">
+        <dex dex="/Users/didi/Downloads/aidl_server/ipc_aidl/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_75432c5a61a796cfdc3f40d3c687f1019bd648f0/classes.dex" />
     </item>
 
 </items>

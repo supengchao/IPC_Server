@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':ipc_binder', ':ipc_messenger', ':ipc_aidl'
