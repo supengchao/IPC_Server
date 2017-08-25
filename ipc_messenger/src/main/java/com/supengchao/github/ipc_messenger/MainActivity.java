@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
@@ -13,11 +14,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Messenger messenger = null;
     private TextView tv;
     private Button start;
+
+    private Messenger clientMessenger = new Messenger(new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            String txt = msg.getData().getString("msg");
+            Toast.makeText(MainActivity.this,txt,Toast.LENGTH_LONG).show();
+        }
+    });
+
     ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -47,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     Message msg = Message.obtain();
                     msg.what = MessengerService.MSG_PRINT;
                     msg.obj = tv;
+                    msg.replyTo = clientMessenger;
                     messenger.send(msg);
                 } catch (RemoteException e) {
                     e.printStackTrace();

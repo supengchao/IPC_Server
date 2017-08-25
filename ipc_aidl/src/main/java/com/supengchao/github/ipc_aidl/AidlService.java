@@ -27,13 +27,6 @@ public class AidlService extends Service {
         };
     }
 
-    PrintInterface.Stub service = new PrintInterface.Stub() {
-        @Override
-        public void print(String msg) throws RemoteException {
-            AidlService.this.print(msg);
-        }
-    };
-
     public void print(String msg) {
         try {
             Log.e(TAG, "Preparing printer...");

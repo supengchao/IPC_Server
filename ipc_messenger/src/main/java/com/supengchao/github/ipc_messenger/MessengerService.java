@@ -5,10 +5,12 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
+import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.TextView;
@@ -20,12 +22,25 @@ import android.widget.Toast;
 public class MessengerService extends Service {
     public static final int MSG_PRINT = 1;
     public static final String TAG = "MessengerService";
+    private Messenger clientMessger;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case MSG_PRINT:
                     print("hahaha", (TextView) msg.obj);
+                    clientMessger = msg.replyTo;
+                    if(clientMessger!=null){
+                        try {
+                            Message replyMsg = Message.obtain();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("msg","回复发给client端");
+                            replyMsg.setData(bundle);
+                            clientMessger.send(replyMsg);
+                        } catch (RemoteException e) {
+                            e.printStackTrace();
+                        }
+                    }
                     break;
                 default:
                     super.handleMessage(msg);
